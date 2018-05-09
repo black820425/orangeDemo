@@ -13,7 +13,6 @@
         <!--Map View Controller-->
         <scene sceneID="7A2-Pn-g7x">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Swg-tQ-dX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="nm6-5n-ymk" customClass="MapViewController" customModule="huataiSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2e-3e-h5z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -125,7 +124,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hTw-XC-dhq">
                         <barButtonItem key="leftBarButtonItem" image="Shape" id="Nbt-cC-PTy">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="dimissButtonAction:" destination="nm6-5n-ymk" id="GZr-Lb-XoM"/>
                             </connections>
@@ -137,13 +136,13 @@
                         <outlet property="searchRegionButton" destination="ypu-cW-jdk" id="4Do-dT-NQs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Swg-tQ-dX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2129" y="940"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FFw-iB-OSb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d0i-dC-dND" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yDj-yD-Blr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="78e-l9-h45">
@@ -155,6 +154,7 @@
                         <segue destination="rMu-tx-EvH" kind="relationship" relationship="viewControllers" id="U8a-Cd-YrO"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0i-dC-dND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1399" y="152"/>
         </scene>

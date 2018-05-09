@@ -8,7 +8,10 @@
 
 import UIKit
 
-class GeneralLoginViewController: UIViewController,UITextFieldDelegate {
+class GeneralLoginViewController: UIViewController,UITextFieldDelegate,UIScrollViewDelegate {
+  
+  @IBOutlet weak var customizeScrollView: UIScrollView!
+  
   @IBOutlet weak var userLoginButton: UIButton!
   @IBOutlet weak var userCrdSignButton: UIButton!
   
@@ -24,14 +27,23 @@ class GeneralLoginViewController: UIViewController,UITextFieldDelegate {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-      
       userppTextField.delegate = self
       identityTextField.delegate = self
       userCodeTextField.delegate = self
       userConfimppTextField.delegate = self
       repareTextFieldAndButtonRadious()
     }
+  
+  override func viewDidLayoutSubviews() {
+    customizeScrollView.contentSize = CGSize(width: self.view.frame.width, height: customizeScrollView.contentSize.height)
+  }
 
+  @IBAction func CreditCardMemApplyButtonAction(_ sender: Any) {
+    if let creditCardMembershipViewController = storyboard?.instantiateViewController(withIdentifier: "CreditCardMembershipViewController") {
+      present(creditCardMembershipViewController, animated: true, completion: nil)
+    }
+  }
+  
   @IBAction func testLoginButtonAction(_ sender: Any) {
     NotificationCenter.default.post(name: NSNotification.Name.init("TestLoginSuccess"), object: nil)
     
@@ -55,9 +67,9 @@ class GeneralLoginViewController: UIViewController,UITextFieldDelegate {
   }
   
   func repareTextFieldAndButtonRadious() {
-    userLoginButton.layer.cornerRadius = 22.0
+    userLoginButton.layer.cornerRadius = 20.0
     userCrdSignButton.layer.borderWidth = 1.0
-    userCrdSignButton.layer.cornerRadius = 22.0
+    userCrdSignButton.layer.cornerRadius = 20.0
     userCrdSignButton.layer.borderColor = Singleton.sharedInstance().getThemeColorR207xG18xB37().cgColor
     
     userppBackgroundView.layer.borderWidth = 1.5

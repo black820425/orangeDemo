@@ -37,6 +37,11 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                       "測試登出"]
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.navigationItem.title = NSLocalizedString("NavigationControllerMoreTitle", comment: "");
+  }
+  
   @IBAction func dimissViewButtonAction(_ sender: Any) {
     dismiss(animated: true, completion: nil)
   }
@@ -85,6 +90,38 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+    let moreViewTableViewCell = tableView.cellForRow(at: indexPath) as! MoreViewTableViewCell
+    
+    /*"MessageTitle" = "訊息";
+    "AppVersionTitle" = "版本";
+    "InterestRateTitle" = "利匯率";
+    "ServiceLocationTitle" = "服務據點";
+    "QRCodePaymentTitle" = "QR Code收付";
+    "OnlineBusinessBidTitle" = "線上業務申辦";
+    "UserPrivacyStatementTitle" = "使用者隱私聲明";*/
+    switch moreViewTableViewCell.customizeTitleLabel.text {
+    case NSLocalizedString("MessageTitle", comment: ""):
+      break
+    case NSLocalizedString("AppVersionTitle", comment: ""):
+      break
+    case NSLocalizedString("InterestRateTitle", comment: ""):
+      break
+    case NSLocalizedString("ServiceLocationTitle", comment: ""):
+      let storyboard = UIStoryboard.init(name: "MapViewController", bundle: nil)
+      let mapViewController = storyboard.instantiateViewController(withIdentifier: "MapViewController")
+      present(mapViewController, animated: true, completion: nil)
+      break
+    case NSLocalizedString("QRCodePaymentTitle", comment: ""):
+      break
+    case NSLocalizedString("OnlineBusinessBidTitle", comment: ""):
+      break
+    case NSLocalizedString("UserPrivacyStatementTitle", comment: ""):
+      break
+    default:
+      //..
+      break
+    }
+    
     if(indexPath.row == 7) {
       dismiss(animated: true, completion: nil)
       NotificationCenter.default.post(name: NSNotification.Name.init("TestSingOutSuccess"), object: nil)

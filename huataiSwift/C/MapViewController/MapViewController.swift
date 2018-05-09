@@ -29,6 +29,11 @@ UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlow
     setButtonRadious()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.navigationItem.title = NSLocalizedString("NavigationControllerMapTitle", comment: "");
+  }
+  
   @IBAction func searchButtonAction(_ sender: Any) {
     let searchControler = UISearchController.init(searchResultsController: nil)
     searchControler.searchBar.delegate = self
