@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  huataiSwift
+
+  Created by Bryan on 2018/5/2.
+  Copyright © 2018年 U-Sync. All rights reserved.
+*/
+
+"GeneralLoginTitle" = "一般登入";
+"QuickLoginTitle" = "快速登入";
+
+//MoreViewController
+"InterestRateTitle" = "利匯率";
+"ServiceLocationTitle" = "服務據點";
+"MessageTitle" = "訊息";
+"QRCodePaymentTitle" = "QR Code收付";
+"OnlineBusinessBidTitle" = "線上業務申辦";
+"UserPrivacyStatementTitle" = "使用者隱私聲明";
+"AppVersionTitle" = "版本";
+
