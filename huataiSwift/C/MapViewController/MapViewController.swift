@@ -21,12 +21,16 @@ UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlow
   @IBOutlet weak var nearBranchesButton: UIButton!
   @IBOutlet weak var searchRegionButton: UIButton!
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     contentArray = ["華泰分行","ATM"]
     prepareUseUserLocation()
     setButtonRadious()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.navigationItem.title = NSLocalizedString("NavigationControllerMapTitle", comment: "");
   }
   
   @IBAction func searchButtonAction(_ sender: Any) {

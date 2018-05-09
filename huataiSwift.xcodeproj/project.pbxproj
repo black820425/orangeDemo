@@ -37,12 +37,14 @@
 		3A97577820A18064007C1EC2 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97577720A18064007C1EC2 /* MoreViewController.swift */; };
 		3A97577A20A18A39007C1EC2 /* MoreViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97577920A18A39007C1EC2 /* MoreViewTableViewCell.swift */; };
 		3A97577C20A19FCF007C1EC2 /* MoreViewController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A97577B20A19FCF007C1EC2 /* MoreViewController.xcassets */; };
+		3A97593F20A29B77007C1EC2 /* CreditCardMembershipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97593E20A29B77007C1EC2 /* CreditCardMembershipViewController.swift */; };
+		3A97594320A2D3D5007C1EC2 /* CreditCardInstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97594220A2D3D5007C1EC2 /* CreditCardInstructionsTableViewCell.swift */; };
+		3A97594520A2D444007C1EC2 /* CreditCardPublicTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A97594420A2D444007C1EC2 /* CreditCardPublicTextFieldTableViewCell.swift */; };
 		3AF56DF1209957940021C42E /* ProjectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF56DF0209957940021C42E /* ProjectAPI.swift */; };
 		3AF56DF320998CB70021C42E /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF56DF220998CB70021C42E /* MapViewController.storyboard */; };
 		3AF56DFA20998D6F0021C42E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF56DF920998D6F0021C42E /* MapViewController.swift */; };
 		3AF56DFD20999BE20021C42E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AF56DFF20999BE20021C42E /* InfoPlist.strings */; };
 		3AF56E0520999C4C0021C42E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AF56E0720999C4C0021C42E /* Localizable.strings */; };
-		3AF56E0A2099AA720021C42E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF56E092099AA720021C42E /* MenuViewController.swift */; };
 		3AF56E0D2099AADF0021C42E /* MainViewImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF56E0C2099AADF0021C42E /* MainViewImage.xcassets */; };
 		3AF56E10209AE9880021C42E /* MapViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF56E0F209AE9880021C42E /* MapViewCollectionViewCell.swift */; };
 		3AF56E12209AFCD70021C42E /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF56E11209AFCD70021C42E /* Singleton.swift */; };
@@ -104,6 +106,9 @@
 		3A97577720A18064007C1EC2 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		3A97577920A18A39007C1EC2 /* MoreViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewTableViewCell.swift; sourceTree = "<group>"; };
 		3A97577B20A19FCF007C1EC2 /* MoreViewController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MoreViewController.xcassets; sourceTree = "<group>"; };
+		3A97593E20A29B77007C1EC2 /* CreditCardMembershipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardMembershipViewController.swift; sourceTree = "<group>"; };
+		3A97594220A2D3D5007C1EC2 /* CreditCardInstructionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInstructionsTableViewCell.swift; sourceTree = "<group>"; };
+		3A97594420A2D444007C1EC2 /* CreditCardPublicTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardPublicTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		3AF56DF0209957940021C42E /* ProjectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectAPI.swift; sourceTree = "<group>"; };
 		3AF56DF220998CB70021C42E /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		3AF56DF920998D6F0021C42E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +118,6 @@
 		3AF56E0220999C260021C42E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		3AF56E0620999C4C0021C42E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3AF56E0820999C4E0021C42E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		3AF56E092099AA720021C42E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3AF56E0C2099AADF0021C42E /* MainViewImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MainViewImage.xcassets; sourceTree = "<group>"; };
 		3AF56E0F209AE9880021C42E /* MapViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AF56E11209AFCD70021C42E /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				3A97575B20A01B1C007C1EC2 /* GeneralLoginViewController.swift */,
+				3A97593D20A29A68007C1EC2 /* CreditCardMembershipViewController */,
 			);
 			path = GeneralLoginViewController;
 			sourceTree = "<group>";
@@ -293,6 +298,16 @@
 			path = MainTabBarController;
 			sourceTree = "<group>";
 		};
+		3A97593D20A29A68007C1EC2 /* CreditCardMembershipViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A97593E20A29B77007C1EC2 /* CreditCardMembershipViewController.swift */,
+				3A97594220A2D3D5007C1EC2 /* CreditCardInstructionsTableViewCell.swift */,
+				3A97594420A2D444007C1EC2 /* CreditCardPublicTextFieldTableViewCell.swift */,
+			);
+			path = CreditCardMembershipViewController;
+			sourceTree = "<group>";
+		};
 		3AF56DF420998CFB0021C42E /* M */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,7 +330,6 @@
 			isa = PBXGroup;
 			children = (
 				3A50C1D420747BE0002171F4 /* ViewController.swift */,
-				3AF56E092099AA720021C42E /* MenuViewController.swift */,
 				3A97577020A15B8D007C1EC2 /* MainTabBarController */,
 				3A97576B20A063BA007C1EC2 /* MainViewController */,
 				3A97576520A06038007C1EC2 /* QRCodePaymentViewController */,
@@ -512,11 +526,12 @@
 				3AF56DF1209957940021C42E /* ProjectAPI.swift in Sources */,
 				3AF56E12209AFCD70021C42E /* Singleton.swift in Sources */,
 				3A945C45209C52B9005414BE /* MainTabBarController.swift in Sources */,
-				3AF56E0A2099AA720021C42E /* MenuViewController.swift in Sources */,
+				3A97594520A2D444007C1EC2 /* CreditCardPublicTextFieldTableViewCell.swift in Sources */,
 				3AF56E15209B088A0021C42E /* ScanQRCodeViewController.swift in Sources */,
 				3A945C3F209C2B62005414BE /* EffectiveScanningRangeView.swift in Sources */,
 				3A97576420A05567007C1EC2 /* BiometricViewController.swift in Sources */,
 				3A97577A20A18A39007C1EC2 /* MoreViewTableViewCell.swift in Sources */,
+				3A97593F20A29B77007C1EC2 /* CreditCardMembershipViewController.swift in Sources */,
 				3A975755209FDFE8007C1EC2 /* LoginViewPageViewController.swift in Sources */,
 				3A97576120A0348A007C1EC2 /* QuickLoginViewPageViewController.swift in Sources */,
 				3A50C1D520747BE0002171F4 /* ViewController.swift in Sources */,
@@ -525,6 +540,7 @@
 				3AF56E10209AE9880021C42E /* MapViewCollectionViewCell.swift in Sources */,
 				3A945C4F209C6289005414BE /* LoginViewCollectionViewCell.swift in Sources */,
 				3A97576820A06133007C1EC2 /* QRCodePaymentViewController.swift in Sources */,
+				3A97594320A2D3D5007C1EC2 /* CreditCardInstructionsTableViewCell.swift in Sources */,
 				3AF56DFA20998D6F0021C42E /* MapViewController.swift in Sources */,
 				3A97576F20A063E7007C1EC2 /* MainViewController.swift in Sources */,
 			);
